@@ -5,7 +5,7 @@
   <head>
     
     <meta charset="utf-8" />
-    <title>Flujo de Caja</title>
+    <title>Flujo de Caja 1</title>
 
     <meta name="description" content="User login page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
