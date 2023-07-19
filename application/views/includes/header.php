@@ -733,7 +733,7 @@ $hoy = $this->encryption->decrypt($hoy);*/
                   
               <li class="dropdown-header">
 
-                <i class="icon-tag"></i><?php echo count($mostrar_empresas_usuario);?> Empresas
+                <i class="icon-tag"></i><?php echo count($mostrar_empresas_usuario);?> Empresa(s)
                 
               </li>
 
