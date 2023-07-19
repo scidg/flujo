@@ -70,7 +70,11 @@ $man_usu=0;
 //prestamo
 $pre=0;
 
-
+if(count($mostrar_empresas_usuario) > 1){
+  $class_icon_empresas = "icon-tags";
+}else{
+  $class_icon_empresas = "icon-tag";
+}
 
 
 
@@ -720,7 +724,7 @@ $hoy = $this->encryption->decrypt($hoy);*/
               
               }else{
 
-                $img_casa_central1 = '<i class="icon-tag"></i>';
+                $img_casa_central1 = '<i class='.$class_icon_empresas.'></i>';
               }
 
                 echo $img_casa_central1."&nbsp;".devuelve_nombre_empresa($id_empresa);?>
@@ -733,17 +737,11 @@ $hoy = $this->encryption->decrypt($hoy);*/
                   
               <li class="dropdown-header">
 
-                <i class="icon-tag"></i><?php echo count($mostrar_empresas_usuario);?> Empresa(s)
+                <i class="<?php echo $class_icon_empresas;?>"></i><?php echo count($mostrar_empresas_usuario);?> Empresa(s)
                 
               </li>
 
               <?php
-              /*if($mostrar_sucursales){
-              foreach ($mostrar_sucursales as $sucursal){ 
-                echo $sucursal->nombre_sucursal."<br>";
-              }
-            }*/
-
                   
               foreach ($mostrar_empresas_usuario as $cl){ ?>
                 
@@ -1184,15 +1182,6 @@ $hoy = $this->encryption->decrypt($hoy);*/
                   <?php } ?>
                   
                 <?php if(es_casa_central($id_empresa) == 0){ ?>
-                    
-                  <?php if ( ($man==1) && ($man_suc== 1) ){ ?>
-                  <li <?php if($boton1 == 'sucursal'){$clase = 'class="active"';}else{$clase = '';} echo $clase; ?>>
-                    <a href="<?php echo base_url()."sucursal"."/".$id_empresa; ?>">
-                      <i class="icon-tags"></i>
-                      <span class="menu-text"> Sucursal(es) </span>
-                    </a>
-                  </li>
-                 <?php } ?>
                  <?php if ( ($man==1) && ($man_ser== 1) ){ ?>
                   <li <?php if($boton1 == 'servicio'){$clase = 'class="active"';}else{$clase = '';} echo $clase; ?>>
                     <a href="<?php echo base_url()."servicio"."/".$id_empresa; ?>">

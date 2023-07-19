@@ -210,17 +210,6 @@ if(!es_casa_central($id_empresa)){
                   </div>
                 </div>
 
-                <div class="infobox infobox-pink infobox-small infobox-dark">
-                  <div class="infobox-icon">
-                    <i class="ace-icon icon icon-tags"></i>
-                  </div>
-
-                  <div class="infobox-data">
-                    <div class="infobox-content">Sucursales</div>
-                    <div class="infobox-content"><?php echo devuelve_cantidad_mantenedor('sucursal', 1);?></div>
-                  </div>
-                </div>
-
                 <div class="infobox infobox-orange infobox-small infobox-dark">
                   <div class="infobox-icon">
                     <i class="ace-icon icon icon-user"></i>
