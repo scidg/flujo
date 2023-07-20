@@ -57,7 +57,7 @@ class User extends BaseController
         $this->global['pageTitle'] = 'Dashboard - Flujo de Caja';
         $this->global['muestra_submodulo'] = $this->welcome->muestra_submodulo();
         $this->global['mostrar_empresas_usuario'] = $this->empresa->mostrar_empresas_usuario($ius);
-        $this->global['sucursales_empresa'] = $this->empresa->sucursales_empresa($ius,4);
+        //$this->global['sucursales_empresa'] = $this->empresa->sucursales_empresa($ius,4);
         //$this->global['mostrar_empresas_usuario_sin_em'] = $this->empresa->mostrar_empresas_usuario_sin_em($ius);
         $this->global['nombreEmpresa'] = $this->empresa->devuelveNombreEmpresa($ies);
         $this->global['permisos_usuario'] = $this->usuario->get_permisos_usuario($ies,$ius);
@@ -3215,7 +3215,7 @@ class User extends BaseController
              $this->global['pageTitle'] = 'Usuario - Flujo de Caja';
              $ihu = $this->session->userdata('id_holding_user');
              $this->global['mostrar_empresas'] = $this->empresa->mostrar_empresas($ihu);
-             $this->global['mostrar_sucursales'] = $this->empresa->mostrar_sucursales2($ihu);
+             //$this->global['mostrar_sucursales'] = $this->empresa->mostrar_sucursales2($ihu);
              $this->global['nombreEmpresa'] = $this->empresa->devuelveNombreEmpresa($i);
              $this->global['mostrar_mod'] = $this->usuario->mostrar_modulos();
              $this->global['mostrar_per'] = $this->usuario->mostrar_permisos();

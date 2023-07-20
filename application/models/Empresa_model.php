@@ -68,7 +68,7 @@ class Empresa_model extends CI_Model
           return false;
       }
   }
-
+/*
   function mostrar_sucursales2($id_holding){
 
     $this->db->select('e.id_empresa,s.id_sucursal,s.nombre_sucursal,s.estado');
@@ -84,7 +84,7 @@ class Empresa_model extends CI_Model
 
         return false;
     }
-}
+}*/
 
     function mostrar_empresas_usuario_sin_em($idu){
 
@@ -125,7 +125,7 @@ class Empresa_model extends CI_Model
           return false;
       }
   }
-
+/*
   function sucursales_empresa($idu,$ide){
 
     $this->db->select('e.id_empresa,s.nombre_sucursal,e.estado');
@@ -147,7 +147,7 @@ class Empresa_model extends CI_Model
         return false;
     }
 }
-
+*/
 
   function devuelveNombreEmpresa($id){
 

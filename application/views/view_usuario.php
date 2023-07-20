@@ -775,30 +775,6 @@
                                 </div>
                               
                                 <?php 
-                                
-                                if($mostrar_sucursales){
-                                
-                                  foreach ($mostrar_sucursales as $s) { 
-
-                                    if($p->id_empresa === $s->id_empresa){ ?>
-                                      
-                                      <div class="form-group">
-                                      
-                                        <label class="control-label col-md-6" style="font-size:14px;" title="SUCURSAL"><?php echo "<i>".ucwords(strtolower($s->nombre_sucursal))."</i>" ?></label>
-
-                                        <div class="col-md-6">
-                                              <label>
-                                                    <input type="checkbox" id="id_sucursal<?php echo $s->id_sucursal;?>" name="id_sucursal[<?php echo $s->id_sucursal;?>]" class="ace" value="<?php echo $s->id_sucursal;?>" >
-                                                    <span class="lbl">&nbsp;</span>
-                                                      <br>
-                                              </label>
-                                        </div>
-                                    
-                                      </div>
-                                      
-                                    <?php }
-                                  } 
-                                }
                               }
                             }
                           }
